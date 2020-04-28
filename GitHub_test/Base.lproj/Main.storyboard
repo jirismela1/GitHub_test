@@ -53,14 +53,23 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-c2-rcT" userLabel="Sliders">
                                                         <rect key="frame" x="0.0" y="0.0" width="283" height="120"/>
                                                         <subviews>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-kW-FOb">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-kW-FOb" userLabel="Red">
                                                                 <rect key="frame" x="-2" y="0.0" width="287" height="31"/>
+                                                                <connections>
+                                                                    <action selector="slidersRGB:" destination="BYZ-38-t0r" eventType="valueChanged" id="rXv-rQ-a0z"/>
+                                                                </connections>
                                                             </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-vd-KZa">
+                                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-vd-KZa" userLabel="Green">
                                                                 <rect key="frame" x="-2" y="45" width="287" height="31"/>
+                                                                <connections>
+                                                                    <action selector="slidersRGB:" destination="BYZ-38-t0r" eventType="valueChanged" id="dcF-EU-RRA"/>
+                                                                </connections>
                                                             </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rGf-u6-wak">
+                                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rGf-u6-wak" userLabel="Blue">
                                                                 <rect key="frame" x="-2" y="90" width="287" height="31"/>
+                                                                <connections>
+                                                                    <action selector="slidersRGB:" destination="BYZ-38-t0r" eventType="valueChanged" id="r0G-Rp-ofe"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                         <constraints>
@@ -160,6 +169,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="RGBValueLabel" destination="znd-2P-8Ye" id="Gny-LQ-06i"/>
+                        <outlet property="blueValueLabel" destination="7hB-Lp-uD4" id="ksg-Q4-E7T"/>
+                        <outlet property="colorCubeView" destination="KQt-zF-9gJ" id="VM4-La-h0t"/>
+                        <outlet property="fontPickerView" destination="TWH-F7-PSm" id="Bj6-4G-u8m"/>
+                        <outlet property="greenValueLabel" destination="pUT-su-0dE" id="sYa-LQ-l6d"/>
+                        <outlet property="redValueLabel" destination="rdu-x4-5Ow" id="hBM-GQ-WzX"/>
+                        <outlet property="textFont" destination="MP0-wf-niq" id="1yk-Ja-QjW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
