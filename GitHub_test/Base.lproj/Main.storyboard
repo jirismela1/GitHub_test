@@ -92,9 +92,6 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdu-x4-5Ow">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="28"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="WRV-ms-Dh6"/>
-                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -180,12 +177,15 @@
                     </view>
                     <connections>
                         <outlet property="RGBValueLabel" destination="znd-2P-8Ye" id="Gny-LQ-06i"/>
-                        <outlet property="blueValueLabel" destination="7hB-Lp-uD4" id="ksg-Q4-E7T"/>
                         <outlet property="colorCubeView" destination="KQt-zF-9gJ" id="VM4-La-h0t"/>
                         <outlet property="fontPickerView" destination="TWH-F7-PSm" id="Bj6-4G-u8m"/>
-                        <outlet property="greenValueLabel" destination="pUT-su-0dE" id="sYa-LQ-l6d"/>
-                        <outlet property="redValueLabel" destination="rdu-x4-5Ow" id="hBM-GQ-WzX"/>
                         <outlet property="textFont" destination="MP0-wf-niq" id="1yk-Ja-QjW"/>
+                        <outletCollection property="slidersRGBCollection" destination="4Aa-kW-FOb" collectionClass="NSMutableArray" id="4ba-Rl-RIJ"/>
+                        <outletCollection property="slidersRGBCollection" destination="oN9-vd-KZa" collectionClass="NSMutableArray" id="czq-dc-jM6"/>
+                        <outletCollection property="slidersRGBCollection" destination="rGf-u6-wak" collectionClass="NSMutableArray" id="wnu-ZI-Uea"/>
+                        <outletCollection property="rgbValuesCollection" destination="rdu-x4-5Ow" collectionClass="NSMutableArray" id="v9s-nO-sVq"/>
+                        <outletCollection property="rgbValuesCollection" destination="pUT-su-0dE" collectionClass="NSMutableArray" id="9db-7B-QU2"/>
+                        <outletCollection property="rgbValuesCollection" destination="7hB-Lp-uD4" collectionClass="NSMutableArray" id="gyI-3D-4O9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
