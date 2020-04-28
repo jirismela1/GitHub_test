@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet var rgbValuesCollection: [UILabel]!
     
     
-    
     @IBOutlet var slidersRGBCollection: [UISlider]!
     @IBAction func slidersRGB(_ sender: UISlider) {
         rgbValuesCollection[sender.tag].text = String(Int(sender.value))
         
+        RGBValueLabel.text = "RGB(\(Int(slidersRGBCollection[0].value)), \(Int(slidersRGBCollection[1].value)), \(Int(slidersRGBCollection[2].value)))"
+
     }
     @IBOutlet weak var textFont: UILabel!
     @IBOutlet weak var fontPickerView: UIPickerView!
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
             slidersRGBCollection[index].value = 100
             rgbValuesCollection[index].text = "100"
         }
+        RGBValueLabel.text = "RGB(100, 100, 100)"
         
         // Do any additional setup after loading the view.
     }
