@@ -9,6 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private let myFonts = ["Copperplate",
+                        "Thonburi",
+                        "GillSans-Bold",
+                        "AvenirNextCondensed-Heavy",
+                        "HelveticaNeue",
+                        "Georgia",
+                        "Kailasa",
+                        "AppleColorEmoji",
+                        "Futura-Bold",
+                        "Chalkduster",
+                        "Courier",
+                        "Cochin"]
 
     @IBOutlet weak var colorCubeView: UIView!
     @IBOutlet weak var RGBValueLabel: UILabel!
@@ -25,9 +38,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fontPickerView.delegate = self
+        fontPickerView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
 
 }
-
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        myFonts.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        myFonts[row]
+    }
+}
