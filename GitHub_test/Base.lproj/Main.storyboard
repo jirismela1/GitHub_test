@@ -112,6 +112,9 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="kbG-ie-kuM"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>

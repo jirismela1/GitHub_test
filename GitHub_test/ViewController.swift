@@ -17,7 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueValueLabel: UILabel!
     
     @IBAction func slidersRGB(_ sender: UISlider) {
-      
+        switch sender.tag{
+        case 0:
+            redValueLabel.text = String(Int(sender.value))
+        case 1:
+            greenValueLabel.text = String(Int(sender.value))
+        case 2:
+            blueValueLabel.text = String(Int(sender.value))
+        default:
+            break
+        }
     }
     @IBOutlet weak var textFont: UILabel!
     @IBOutlet weak var fontPickerView: UIPickerView!
