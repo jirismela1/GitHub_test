@@ -18,10 +18,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S4I-mx-jjk">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lc-ux-Dlv">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lc-ux-Dlv" userLabel="Color mixer">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="440.33333333333331"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQt-zF-9gJ">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQt-zF-9gJ" userLabel="Color cube">
                                                 <rect key="frame" x="64" y="49" width="247" height="170"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -29,7 +29,7 @@
                                                     <constraint firstAttribute="width" constant="247" id="9tg-4P-GVK"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color mixer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKF-Sy-mSw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color mixer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKF-Sy-mSw" userLabel="Title">
                                                 <rect key="frame" x="114" y="8" width="147" height="32.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="fGF-oq-dmM"/>
@@ -50,7 +50,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yvo-12-lOH">
                                                 <rect key="frame" x="16" y="285" width="343" height="120"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-c2-rcT">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-c2-rcT" userLabel="Sliders">
                                                         <rect key="frame" x="0.0" y="0.0" width="283" height="120"/>
                                                         <subviews>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-kW-FOb">
@@ -72,7 +72,7 @@
                                                             <constraint firstItem="4Aa-kW-FOb" firstAttribute="leading" secondItem="Njh-c2-rcT" secondAttribute="leading" id="nb0-KZ-KYc"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-VI-aXf">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="BwE-VI-aXf" userLabel="RGB values">
                                                         <rect key="frame" x="303" y="0.0" width="40" height="120"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdu-x4-5Ow">
@@ -114,9 +114,30 @@
                                             <constraint firstItem="yvo-12-lOH" firstAttribute="top" secondItem="znd-2P-8Ye" secondAttribute="bottom" constant="32" id="vIW-xT-p3m"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ps9-Xh-zDn">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ps9-Xh-zDn" userLabel="Font tester">
                                         <rect key="frame" x="0.0" y="440.33333333333326" width="375" height="293.66666666666674"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWH-F7-PSm">
+                                                <rect key="frame" x="0.0" y="77.666666666666686" width="375" height="216"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font tester" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP0-wf-niq" userLabel="Text ">
+                                                <rect key="frame" x="123" y="36.000000000000057" width="129" height="33.666666666666657"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="bA7-2k-Yq2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TWH-F7-PSm" secondAttribute="bottom" id="18G-cw-CpA"/>
+                                            <constraint firstAttribute="trailing" secondItem="TWH-F7-PSm" secondAttribute="trailing" id="2ry-Az-GdF"/>
+                                            <constraint firstItem="MP0-wf-niq" firstAttribute="centerX" secondItem="ps9-Xh-zDn" secondAttribute="centerX" id="JuF-t2-cvK"/>
+                                            <constraint firstItem="TWH-F7-PSm" firstAttribute="leading" secondItem="ps9-Xh-zDn" secondAttribute="leading" id="Rna-7F-5UZ"/>
+                                            <constraint firstItem="MP0-wf-niq" firstAttribute="top" secondItem="ps9-Xh-zDn" secondAttribute="top" constant="36" id="Yg2-Dy-ypN"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
