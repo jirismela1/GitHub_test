@@ -19,7 +19,13 @@ class ViewController: UIViewController {
     @IBAction func slidersRGB(_ sender: UISlider) {
         rgbValuesCollection[sender.tag].text = String(Int(sender.value))
         
-        RGBValueLabel.text = "RGB(\(Int(slidersRGBCollection[0].value)), \(Int(slidersRGBCollection[1].value)), \(Int(slidersRGBCollection[2].value)))"
+        let red = Int(slidersRGBCollection[0].value)
+        let green = Int(slidersRGBCollection[1].value)
+        let blue = Int(slidersRGBCollection[2].value)
+        
+        RGBValueLabel.text = "RGB(\(red), \(green), \(blue))"
+        
+        colorCubeView.backgroundColor = UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
 
     }
     @IBOutlet weak var textFont: UILabel!
@@ -33,6 +39,7 @@ class ViewController: UIViewController {
             rgbValuesCollection[index].text = "100"
         }
         RGBValueLabel.text = "RGB(100, 100, 100)"
+        colorCubeView.backgroundColor = .white
         
         // Do any additional setup after loading the view.
     }
