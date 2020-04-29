@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		458C61702458BE9A00A43D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C616F2458BE9A00A43D13 /* AppDelegate.swift */; };
 		458C61722458BE9A00A43D13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C61712458BE9A00A43D13 /* SceneDelegate.swift */; };
-		458C61742458BE9A00A43D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C61732458BE9A00A43D13 /* ViewController.swift */; };
+		458C61742458BE9A00A43D13 /* ColorFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C61732458BE9A00A43D13 /* ColorFontViewController.swift */; };
 		458C61772458BE9A00A43D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458C61752458BE9A00A43D13 /* Main.storyboard */; };
 		458C61792458BE9D00A43D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458C61782458BE9D00A43D13 /* Assets.xcassets */; };
 		458C617C2458BE9D00A43D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458C617A2458BE9D00A43D13 /* LaunchScreen.storyboard */; };
+		458C618424595F6300A43D13 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C618324595F6300A43D13 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		458C616C2458BE9A00A43D13 /* GitHub_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		458C616F2458BE9A00A43D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		458C61712458BE9A00A43D13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		458C61732458BE9A00A43D13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		458C61732458BE9A00A43D13 /* ColorFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFontViewController.swift; sourceTree = "<group>"; };
 		458C61762458BE9A00A43D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		458C61782458BE9D00A43D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		458C617B2458BE9D00A43D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		458C617D2458BE9D00A43D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		458C618324595F6300A43D13 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				458C616F2458BE9A00A43D13 /* AppDelegate.swift */,
 				458C61712458BE9A00A43D13 /* SceneDelegate.swift */,
-				458C61732458BE9A00A43D13 /* ViewController.swift */,
+				458C61732458BE9A00A43D13 /* ColorFontViewController.swift */,
+				458C618324595F6300A43D13 /* TimerViewController.swift */,
 				458C61752458BE9A00A43D13 /* Main.storyboard */,
 				458C61782458BE9D00A43D13 /* Assets.xcassets */,
 				458C617A2458BE9D00A43D13 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				458C61742458BE9A00A43D13 /* ViewController.swift in Sources */,
+				458C618424595F6300A43D13 /* TimerViewController.swift in Sources */,
+				458C61742458BE9A00A43D13 /* ColorFontViewController.swift in Sources */,
 				458C61702458BE9A00A43D13 /* AppDelegate.swift in Sources */,
 				458C61722458BE9A00A43D13 /* SceneDelegate.swift in Sources */,
 			);

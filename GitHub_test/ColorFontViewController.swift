@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ColorFontViewController: UIViewController {
     
     private let myFonts = ["Copperplate",
                         "Thonburi",
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
 
 
 }
-extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+extension ColorFontViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }

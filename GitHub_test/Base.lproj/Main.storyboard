@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Color Font View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitHub_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ColorFontViewController" customModule="GitHub_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,15 +115,25 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAM-ky-07L">
+                                                <rect key="frame" x="319" y="8" width="40" height="30"/>
+                                                <state key="normal" title="Timer"/>
+                                                <connections>
+                                                    <segue destination="qm7-Jb-I8p" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="hPr-pf-tNu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="znd-2P-8Ye" firstAttribute="top" secondItem="KQt-zF-9gJ" secondAttribute="bottom" constant="15" id="2OJ-Tp-l0J"/>
+                                            <constraint firstItem="jAM-ky-07L" firstAttribute="leading" secondItem="TKF-Sy-mSw" secondAttribute="trailing" constant="58" id="77v-Yg-Yd8"/>
                                             <constraint firstItem="TKF-Sy-mSw" firstAttribute="centerX" secondItem="0Lc-ux-Dlv" secondAttribute="centerX" id="83l-SJ-t3D"/>
                                             <constraint firstItem="yvo-12-lOH" firstAttribute="leading" secondItem="0Lc-ux-Dlv" secondAttribute="leading" constant="16" id="8em-Sm-TsL"/>
                                             <constraint firstItem="KQt-zF-9gJ" firstAttribute="centerX" secondItem="0Lc-ux-Dlv" secondAttribute="centerX" id="FCw-UN-1TD"/>
+                                            <constraint firstItem="jAM-ky-07L" firstAttribute="top" secondItem="0Lc-ux-Dlv" secondAttribute="top" constant="8" id="Qtu-pd-XYO"/>
                                             <constraint firstAttribute="trailing" secondItem="yvo-12-lOH" secondAttribute="trailing" constant="16" id="aNb-AR-pET"/>
                                             <constraint firstItem="TKF-Sy-mSw" firstAttribute="top" secondItem="0Lc-ux-Dlv" secondAttribute="top" constant="8" id="eeF-Hh-BMF"/>
+                                            <constraint firstAttribute="trailing" secondItem="jAM-ky-07L" secondAttribute="trailing" constant="16" id="hwR-Ld-yGc"/>
                                             <constraint firstItem="znd-2P-8Ye" firstAttribute="centerX" secondItem="0Lc-ux-Dlv" secondAttribute="centerX" id="n7k-7E-wmf"/>
                                             <constraint firstItem="KQt-zF-9gJ" firstAttribute="top" secondItem="TKF-Sy-mSw" secondAttribute="bottom" constant="8.3333333333333357" id="sEX-o6-w4E"/>
                                             <constraint firstItem="yvo-12-lOH" firstAttribute="top" secondItem="znd-2P-8Ye" secondAttribute="bottom" constant="32" id="vIW-xT-p3m"/>
@@ -192,5 +202,40 @@
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="129.31034482758622"/>
         </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="F8E-Lg-zBj">
+            <objects>
+                <viewController id="qm7-Jb-I8p" customClass="TimerViewController" customModule="GitHub_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B4O-Fv-LWv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsj-er-60q">
+                                <rect key="frame" x="16" y="51" width="24" height="16.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="1Ed-PP-0BV"/>
+                                    <constraint firstAttribute="height" constant="22" id="d1h-ig-def"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="12O-qq-6Oc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zsj-er-60q" firstAttribute="leading" secondItem="W1T-Ul-QaH" secondAttribute="leading" constant="16" id="GaD-dH-CLP"/>
+                            <constraint firstItem="Zsj-er-60q" firstAttribute="top" secondItem="W1T-Ul-QaH" secondAttribute="top" constant="4" id="ipm-X3-834"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W1T-Ul-QaH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jO1-Xb-2G7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933.60000000000002" y="128.57142857142858"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+    </resources>
 </document>
